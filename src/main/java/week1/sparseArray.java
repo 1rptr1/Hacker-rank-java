@@ -68,7 +68,7 @@ public class sparseArray {
         for (String s : strings) {
             count.put(s, count.getOrDefault(s, 0) + 1);
         }
-        List<Integer> ans = new ArrayList<Integer>();
+        List<Integer> ans = new ArrayList<>();
         for (String s : queries) {
             ans.add(count.getOrDefault(s, 0));
         }
