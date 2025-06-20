@@ -9,6 +9,9 @@ public class panagrams {
         System.out.println(pangrams("We promptly judged antique ivory buckles for the next prize"));
     }
 
+    //  Time Complexity	Practical Speed	Simplicity
+    //  O(26×n) ≈ O(n)	Good	Simple
+
     public static String pangrams(String s) {
         // Write your code here
         String ans = "panagram";
@@ -22,6 +25,8 @@ public class panagrams {
         }
         return ans;
     }
+//Time Complexity	Practical Speed	Simplicity
+//O(n)	Better (no rescans)	Clean + Fast
 
     public static String pangrams2(String s) {
         Set<Character> letters = new HashSet<>();
